@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<SplitPane dividerPositions="0.23563218390804597" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="524.0" prefWidth="398.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.calc.calculadora.Controller">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <Text fx:id="Texto" layoutX="-3.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="RIGHT" wrappingWidth="398.0">
+               <font>
+                  <Font size="80.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <GridPane prefHeight="396.0" prefWidth="398.0" style="-fx-background-color: black;">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="button7" mnemonicParsing="false" onAction="#Numeros" prefHeight="82.0" prefWidth="99.0" style="-fx-background-color: cyan; -fx-border-color: blue;" text="7" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button8" mnemonicParsing="false" onAction="#Numeros" prefHeight="81.0" prefWidth="99.0" style="-fx-background-color: cyan; -fx-border-color: blue;" text="8" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button9" mnemonicParsing="false" onAction="#Numeros" prefHeight="81.0" prefWidth="100.0" style="-fx-background-color: cyan; -fx-border-color: blue;" text="9" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button4" mnemonicParsing="false" onAction="#Numeros" prefHeight="112.0" prefWidth="129.0" style="-fx-background-color: cyan; -fx-border-color: blue;" text="4" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button5" mnemonicParsing="false" onAction="#Numeros" prefHeight="121.0" prefWidth="125.0" style="-fx-background-color: cyan; -fx-border-color: blue;" text="5" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button6" mnemonicParsing="false" onAction="#Numeros" prefHeight="142.0" prefWidth="168.0" style="-fx-background-color: cyan; -fx-border-color: blue;" text="6" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button1" mnemonicParsing="false" onAction="#Numeros" prefHeight="120.0" prefWidth="141.0" style="-fx-background-color: cyan; -fx-border-color: blue;" text="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button2" mnemonicParsing="false" onAction="#Numeros" prefHeight="122.0" prefWidth="138.0" style="-fx-background-color: cyan; -fx-border-color: blue;" text="2" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button3" mnemonicParsing="false" onAction="#Numeros" prefHeight="101.0" prefWidth="120.0" style="-fx-background-color: cyan; -fx-border-color: blue;" text="3" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button0" mnemonicParsing="false" onAction="#Numeros" prefHeight="84.0" prefWidth="99.0" style="-fx-background-color: cyan; -fx-border-color: blue;" text="0" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonComa" mnemonicParsing="false" onAction="#Numeros" prefHeight="92.0" prefWidth="99.0" style="-fx-background-color: cyan; -fx-border-color: blue;" text="." GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonIgual" mnemonicParsing="false" onAction="#calcularResultado" prefHeight="81.0" prefWidth="103.0" style="-fx-background-color: cyan; -fx-border-color: blue;" text="=" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonMas" mnemonicParsing="false" onAction="#agregarOperacion" prefHeight="83.0" prefWidth="108.0" style="-fx-background-color: cyan; -fx-border-color: blue;" text="+" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonMenos" mnemonicParsing="false" onAction="#agregarOperacion" prefHeight="109.0" prefWidth="112.0" style="-fx-background-color: cyan; -fx-border-color: blue;" text="-" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonMulti" mnemonicParsing="false" onAction="#agregarOperacion" prefHeight="80.0" prefWidth="107.0" style="-fx-background-color: cyan; -fx-border-color: blue;" text="*" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonBorrar1" mnemonicParsing="false" onAction="#borrarUltimo" prefHeight="81.0" prefWidth="105.0" style="-fx-background-color: cyan; -fx-border-color: blue;" text="⌫" GridPane.columnIndex="3">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonBorrarTodo" mnemonicParsing="false" onAction="#borrarTodo" prefHeight="95.0" prefWidth="115.0" style="-fx-background-color: cyan; -fx-border-color: blue;" text="C" GridPane.columnIndex="2">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonDivision" mnemonicParsing="false" onAction="#agregarOperacion" prefHeight="118.0" prefWidth="108.0" style="-fx-background-color: cyan; -fx-border-color: blue;" text="/" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Basic Casio" wrappingWidth="197.13671875">
+                     <font>
+                        <Font name="Corbel Bold Italic" size="41.0" />
+                     </font>
+                  </Text>
+               </children>
+            </GridPane>
+         </children></AnchorPane>
+  </items>
+</SplitPane>
